@@ -8,7 +8,9 @@
 import scrapy
 
 
-class ToiScraperItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+class NewsArticle(scrapy.Item):
+    title = scrapy.Field()
+    description = scrapy.Field()
+    link = scrapy.Field()
+    pub_date = scrapy.Field()
+    category = scrapy.Field()
